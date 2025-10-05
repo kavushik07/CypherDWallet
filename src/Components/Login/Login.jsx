@@ -11,6 +11,10 @@ export default function Welcome() {
     const handleCreateWallet = () => {
         navigate("/create-wallet");
     };
+
+    const handleImportWallet = () =>{
+        navigate("/import-wallet");
+    }
     return (
         <div className="flex items-center justify-center min-h-screen">
             <motion.div
@@ -48,6 +52,7 @@ export default function Welcome() {
                         className="w-3/4 bg-white text-black-800 font-semibold py-2 rounded-lg border border-gray-300 hover:bg-gray-100 transition"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.8 }}
+                        onClick={handleImportWallet}
                     >
                         IMPORT WALLET
                     </motion.button>

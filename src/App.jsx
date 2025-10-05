@@ -6,6 +6,7 @@ import Login from './Components/Login/Login.jsx'
 import Password from './Components/Createpassword/Password.jsx'
 import WalletSetup from './Components/SeedPhrase/SeedPhrase.jsx'
 import Dashboard from './Components/Dashboard/Dashboard.jsx';
+import ImportWallet from './Components/ImportWallet/ImportWallet.jsx'
 import './App.css'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/create-wallet" element={<Password />} />
           <Route path="/wallet-setup" element={<WalletSetup />} />
+          <Route path="/import-wallet" element={<ImportWallet />} />
           <Route path="/Dashboard" element={<Dashboard />} />
         </Routes>
       </Router>
